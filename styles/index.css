@@ -194,27 +194,34 @@
   .hero {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 10px;
   }
-  .left .intro {
-    top: 30%;
-    left: 7%;
+  .hero .left .intro {
+    top: 45%;
+    left: 5%;
+  }
+  .hero .right{
+    height: 50vh;
   }
   .left .intro p {
     font-size: 1.025rem;
   }
   .left .intro p:first-child {
-    font-size: 2.35rem;
+    font-size: 2.05rem;
   }
   .left .intro p:nth-child(2),
   .left .intro p:nth-child(3) {
-    font-size: 2.36rem;
+    font-size: 2.06rem;
+  }
+  .hero .right .clip {
+    width: 100%;
+    height: 250px;
+    margin-top: 70px;
   }
   .right .clip img {
-    /* width: 50%; */
-    position: inherit;
-    top: 80px;
-    left: 5%;
+    position: unset;
+    width: 100%;
+    height: 100%;
   }
   .right .clip .eclipes img {
     display: none;
@@ -286,9 +293,27 @@
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 350px) {
   .left .intro {
-    top: 50%;
+    top: 45%;
     left: 5%;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .left .intro p {
+    font-size: 14px;
+  }
+  .left .intro p:first-child {
+    font-size: 25.8px;
+  }
+  .left .intro p:nth-child(2),
+  .left .intro p:nth-child(3) {
+    font-size: 24.96px;
+  }
+  .hero .right .clip {
+    width: 100%;
+    height: 250px;
+    margin-top: 70px;
   }
 }
