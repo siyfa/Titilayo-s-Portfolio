@@ -44,26 +44,33 @@
 }
 .right {
   flex: 6;
+  overflow: hidden;
 }
 .right .clip {
-  position: relative;
-  margin-top: 10px;
+  width: 100%;
+  height: 100%;
 }
-.right .clip img {
-  width: 90%;
-  height: 550px;
-  position: absolute;
+.right .clip .self {
+  width: 100%;
+  height: 100%;
   z-index: 2;
+  position: relative;
+}
+.right .clip .eclipes{
+  position: absolute;
+  z-index: 1;
+  top: 17.5%;
+  right: 10px;
+  width: 45%;
+  height: 83%;
 }
 .right .clip .eclipes img {
-  position: absolute;
-  top: 0;
-  right: 50px;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 .projects {
   background: #efefef;
-  padding: 60px 120px;
+  padding: 60px 60px;
 }
 .projects h3 {
   color: #343a40;
@@ -92,7 +99,7 @@
   border-radius: 16px;
 }
 .projects .projects-section .project-image {
-  width: 500px;
+  width: 100%;
   height: inherit;
   margin-top: -20px;
   object-fit: contain;
@@ -141,7 +148,7 @@
 }
 .testimonials {
   background: #e3ecde;
-  padding: 60px 120px;
+  padding: 60px;
   font-family: "Josefin Sans";
 }
 .testimonials h3 {

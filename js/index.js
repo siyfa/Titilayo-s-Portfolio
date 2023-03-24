@@ -10,3 +10,8 @@ navToggle.addEventListener("click", () => {
 btn.addEventListener("click", () => {
   window.history.back();
 })
+
+function scrollToSection(sectionId) {
+  const url = `${window.location.origin}/#${sectionId}`;
+  window.location.href = url;
+}
